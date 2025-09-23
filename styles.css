@@ -1,0 +1,22 @@
+:root {
+--text: #eaf6f9;
+--background: #040c0e;
+--primary: #8acddc;
+--secondary: #293a89;
+--accent: #212377;
+}
+
+body {
+    color: var(--text);
+    background: var(--background);
+}
+
+body {
+    font-family: sans-serif;
+    font-size: large;
+    font-style: italic;
+}
+
+p {
+    text-decoration: underline;
+}
