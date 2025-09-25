@@ -1,9 +1,9 @@
 :root {
 --text: #eaf6f9;
---background: #040c0e;
+--background: #001322;
 --primary: #8acddc;
---secondary: #293a89;
---accent: #212377;
+--secondary: hsl(221, 100%, 56%);
+--accent: #080836;
 }
 
 body {
@@ -13,10 +13,29 @@ body {
 
 body {
     font-family: sans-serif;
-    font-size: large;
+    font-size: medium;
     font-style: italic;
 }
 
 p {
     text-decoration: underline;
+    margin: var(--primary);
+    padding: var(--secondary);
+    border: ;
+}
+
+h1 {
+    margin: 1px;
+}
+
+h2{
+margin:1px solid #293a89 ;
+}
+
+h3 {
+    
+}
+
+ul {
+   
 }
