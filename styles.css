@@ -1,6 +1,6 @@
 :root {
---text: #eaf6f9;
---background: #001322;
+--text: #5c9bee;
+--background: #010a11;
 --primary: #8acddc;
 --secondary: hsl(221, 100%, 56%);
 --accent: #080836;
@@ -9,12 +9,10 @@
 body {
     color: var(--text);
     background: var(--background);
-}
-
-body {
     font-family: sans-serif;
     font-size: medium;
     font-style: italic;
+}
 }
 
 p {
