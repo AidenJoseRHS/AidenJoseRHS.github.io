@@ -7,25 +7,43 @@
     <title>Aiden's Webfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-    <h1>Aiden's Webfolio</h1>
-    <a href="class_links.html">Class Links</a> <- Classmates Websites!
-    <em><h2>My community</h2>
+<h1>Aiden's Webfolio</h1>
+<a href="class_links.html">Class Links</a> <- Classmates Websites! <em>    <h2>My community</h2>
     <p>
-        <ul>
-            <li>Friends Page</li>
-            <li><a href="family.html">Family Page</a></li>
-        </ul>
+        <li>Friends Page</li>
+        <li><a href="family.html">Family Page</a></li>
     </p>
-    <em><h2>My Hobbies</h2><em>
-    <ul>       
-    <li>Hobbies</li>
-    <li><a href="sports.html">Sports</a></li>
-    <li><a href="videogames.html">Videogames</a></li>
-    </ul>
-            <h2><li><em>Favorite Music</em></li></h2>
-            Music Page
+    <h2>My Hobbies</h2>
+        <li>Hobbies</li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="videogames.html">Videogames</a></li>
+    
+    <h2>
+        <li>Favorite Music</li>
+    </h2>
+    Music Page
+    <p id="balloon">🎈</p>
+    <script>
+        let balloonEl = document.getElementById("balloon");
+        let fontSize = 10;
+        function handleKeyDown(event) {
+            if (event.key == "ArrowUp") {
+                fontSize *= 1.1;
+                balloonEl.style.fontSize = fontSize + "px";
+                event.preventDefault();
+            }
+            if (event.key == "ArrowDown") {
+                fontSize /= 1.1;
+                balloonEl.style.fontSize = fontSize + "px";
+                event.preventDefault();
+            }
 
- <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png" alt="A 75x75 Basketball."za
-</body>
-
+            if (fontSize > 100) {
+                balloonEl.textContent = "💥";
+                window.removeEventListener("keydown", handleKeyDown);
+            }
+        }
+        window.addEventListener("keydown", handleKeyDown);
+    </script>
+    </body>
 </html>
