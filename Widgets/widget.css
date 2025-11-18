@@ -1,0 +1,12 @@
+
+body {
+    background-image: url("https://tr.rbxcdn.com/180DAY-a0ec0bc1f5c2497466a319bdb4456cc8/500/280/Image/Jpeg/noFilter");
+    background-size: cover;
+    font-family: Sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+img {
+transform: translate(0px, 375px)
+}
