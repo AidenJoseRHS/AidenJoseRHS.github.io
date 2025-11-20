@@ -4,19 +4,24 @@ body {
     background-size: cover;
     font-family: Sans-serif;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
 }
 
-button {
-    transform: translate(0px, 167px);
+#nutton {
+    transform: translate(-67px, 150px);
     background-color: rgba(255, 255, 255, 0.0);
     border: 0px solid black;
-}
-
-h1 {
-
+    transition: width 0.5s ease;
 }
 
 h2 {
-    
+    font-family:Arial;
+}
+
+#baconz {
+    transform: translate(-550px, 0px);
+}
+
+#guestz {
+    transform: translate(-487px, -25px);
 }
