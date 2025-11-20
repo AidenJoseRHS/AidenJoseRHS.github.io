@@ -18,7 +18,6 @@ clickers()
 
 function baconUpgrade() {
 muscleGain += 1
-muscleEl += 1
     boom.play();
     boom.currentTime = 0.3;
 }
