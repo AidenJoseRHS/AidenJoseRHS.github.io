@@ -8,5 +8,8 @@ function clickers() {
     muscleEl.textContent = muscle;
 
     scream.play();
+    scream.currentTime = 0.2;
+
+    
 }
 clickers()
