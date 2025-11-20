@@ -7,6 +7,16 @@ body {
     height: 100vh;
 }
 
-img {
-transform: translate(0px, 375px)
+button {
+    transform: translate(0px, 167px);
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 0px solid black;
+}
+
+h1 {
+
+}
+
+h2 {
+    
 }
