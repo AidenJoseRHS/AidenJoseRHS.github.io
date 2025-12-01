@@ -8,7 +8,7 @@ body {
 }
 
 #nutton {
-    transform: translate(-240px, 267px);
+    transform: translate(-290px, 267px);
     background-color: rgba(255, 255, 255, 0.0);
     border: 0px solid black;
     transition: width 0.5s ease;
@@ -21,7 +21,7 @@ h2 {
 }
 
 #baconz {
-    transform: translate(-550px, 0px);
+    transform: translate(-598px, 0px);
 }
 
 #guestz {
