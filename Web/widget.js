@@ -36,3 +36,8 @@ function guestUpgrade() {
     muscleEl.textContent = muscle;
 }
 
+function backmusic() {
+        backround.play();
+    backround.currentTime = 0.3;
+}
+backmusic()
