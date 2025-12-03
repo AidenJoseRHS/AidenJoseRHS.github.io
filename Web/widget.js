@@ -4,7 +4,9 @@ let robuxEl = document.getElementById("robux-el")
 let muscle = 0;
 let muscleGain = 1;
 // let money = 1;
-let rebirthCost = 1
+let rebirthCost = 1000;
+let rebirthMultiplier = 0;
+let baconCost = 10;
 let scream = document.getElementById("scream");
 let boom = document.getElementById("boom");
 let baconz = document.getElementById("baconz");
@@ -12,7 +14,7 @@ let guestz = document.getElementById("guestz");
 let nutton = document.getElementById("nutton");
 
 function clickers() {
-    muscle += muscleGain;
+    muscle += muscleGain += rebirthMultiplier;
     muscleEl.textContent = muscle;
 
     scream.play();
@@ -23,10 +25,15 @@ clickers()
 
 
 function baconUpgrade() {
+    if (muscle > baconCost) {
+        muscle -= baconCost;
+        baconCost += 10;
 muscleGain += 1;
     boom.play();
     boom.currentTime = 0.3;
     gainEl.textContent = "Click = +" + muscleGain;
+    muscleEl.textContent = muscle;
+    }
 }
 
 function guestUpgrade() {
@@ -47,7 +54,7 @@ function guestUpgrade() {
 
 
 function backmusic() {
-        backround.play();
+    backround.play();
     backround.currentTime = 0.3;
 }
 backmusic()
@@ -55,7 +62,8 @@ backmusic()
         function rebirth() {
             if (muscle > rebirthCost) {
             muscle = 0;
-            muscleGain *= 2;
+            rebirthMultiplier += 3;
+            muscleGain = 0;
             rebirthCost *= 10;
             gainEl.textContent = "Click = +" + muscleGain;
             muscleEl.textContent = muscle;

@@ -8,6 +8,7 @@ body {
 }
 
 #nutton {
+    place-items: center;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.0);
@@ -30,5 +31,5 @@ h2 {
 }
 
 #rebirthButton {
-    transform: translate(-568px, -15px);
+    transform: translate(-711px, 25px);
 }
